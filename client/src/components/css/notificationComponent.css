@@ -1,0 +1,43 @@
+.notification {
+  position: absolute;
+  z-index: 1000;
+  top: calc(var(--header-height) + 1rem);
+  right: 1rem;
+  background-color: black;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.notification--success {
+  background-color: rgb(58, 151, 58);
+}
+.notification--warning {
+  background-color: rgb(var(--red));
+}
+.notification--alert {
+  background-color: rgb(194, 93, 34);
+}
+
+.notification_slider {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.notification_slide {
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  animation: sliderslider 1s 1;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes sliderslider {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

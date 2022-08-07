@@ -1,0 +1,157 @@
+/* this file is to modifyy the components */
+.section {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.modal {
+  display: block;
+}
+
+.badge {
+  position: relative;
+}
+
+.badge_icon {
+  bottom: -1em;
+  left: -1.05em;
+  background-color: palevioletred;
+  padding: 1.3px 4px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.badge_icon--noContent {
+  bottom: -2px;
+  left: -12px;
+  padding: 0px;
+  width: 12px;
+  height: 12px;
+}
+
+.badge svg {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(var(--gray-light));
+}
+
+.header {
+  z-index: 10;
+}
+
+.header_links {
+  display: flex;
+  position: inherit;
+  background-color: transparent;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 0rem;
+  right: 0px;
+}
+
+.header_links > div {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_link .badge_icon {
+  left: -0.5rem;
+  bottom: -0.5rem;
+}
+
+.header_link svg {
+  color: rgba(var(--black), 0.9);
+}
+
+.header_link button {
+  background-color: rgba(var(--black), 0.9);
+  color: white;
+  border: 1px solid rgba(var(--black), 0.9);
+}
+
+.header_link button:hover {
+  color: rgba(var(--black), 1);
+  background-color: white;
+}
+
+.header_linksMobile {
+  position: absolute;
+  border: 1px solid rgba(var(--gray-light), 0.5);
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  width: 0px;
+  padding: 0px;
+  gap: 10px;
+}
+
+.header_linksMobile > div {
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.header_links--active {
+  right: 0px;
+  max-width: 70vw;
+  width: max-content;
+  padding: 1rem;
+}
+
+.header_search {
+  padding: 1.5px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 1.5px solid rgba(var(--gray-light), 1);
+  transition: ease 200ms;
+  /* width: 90%; */
+}
+
+.header_search:focus-within {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.header_searchBar {
+  background-color: transparent;
+  border: none;
+  width: 90%;
+  z-index: 200;
+}
+
+button.header_searchBtn {
+  background-color: transparent;
+  color: rgba(var(--gray-light), 1);
+  cursor: pointer;
+}
+
+.slider_item img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.slider {
+  max-width: 100%;
+}
+
+.slider_buttons {
+  max-width: 99vw;
+  box-sizing: border-box;
+}
+
+.slider_dots {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.slider_dots > * {
+  color: white;
+}

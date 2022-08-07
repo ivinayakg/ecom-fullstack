@@ -1,0 +1,59 @@
+.addressChecker {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.addressCheckerCard {
+  padding: 1.2rem;
+  border: 1px solid #a3a3a3;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.addressCheckerCard--active {
+  background-color: rgba(var(--black), 0.1);
+}
+
+.addressCheckerCard button.btn {
+  margin-top: 1rem;
+}
+
+.checkoutSummary {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.checkoutSummary_table {
+  background-color: rgba(var(--black), 0.5);
+  width: 100%;
+}
+
+.checkoutSummary_table td,
+.checkoutSummary_table th {
+  border: 1px solid rgba(var(--black), 0.5);
+  background-color: white;
+  padding: 8px;
+  text-align: center;
+}
+.checkoutSummary_final {
+  background-color: white;
+  padding: 1.2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
